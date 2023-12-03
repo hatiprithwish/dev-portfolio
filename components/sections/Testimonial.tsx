@@ -4,7 +4,7 @@ import Image from "next/image";
 const Testimonial = () => {
   return (
     <section id="testimonials" className="mx-10 lg:mx-28 py-10">
-      <h1 className="text-5xl font-bold">Testimonials</h1>
+      <h1 className="text-5xl font-bold mb-5">Testimonials</h1>
 
       <article className="flex justify-between gap-5">
         {testimonialCards.map((card) => (

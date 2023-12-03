@@ -2,7 +2,7 @@ export const navLinks = [
   { href: "/", key: "Home", text: "Home" },
   { href: "#projects", key: "Projects", text: "Projects" },
   { href: "#testimonials", key: "Testimonials", text: "Testimonials" },
-  { href: "#about", key: "About", text: "About" },
+  { href: "#contact", key: "Contact", text: "Contact" },
   // { href: '#contact', key: 'Contact', text: 'Contact'}
 ];
 
@@ -41,12 +41,12 @@ export const testimonialCards = [
     id: 2,
     client: "SB Welfare Society",
     text: "I highly recommend Prithwish for his exceptional web development prowess, managing SEO independently. His strong communication and relentless work ethic shine brightly. I relyed on him for redesigning my NGO website and it was an seamless experience working with him.",
-    logo: "/Logo",
+    logo: "/Logo.jpg",
   },
   {
     id: 3,
     client: "Grocomatic",
     text: "Prithwish expertly managed our WooCommerce site and SEO, showcasing remarkable design skills and a proactive problem-solving approach. He is an invaluable asset with exceptional talent and dedication.",
-    logo: "/Logo",
+    logo: "/Logo.jpg",
   },
 ];
