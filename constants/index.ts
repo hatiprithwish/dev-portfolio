@@ -1,7 +1,7 @@
 export const navLinks = [
   { href: "/", key: "Home", text: "Home" },
   { href: "#projects", key: "Projects", text: "Projects" },
-  { href: "#experience", key: "Experience", text: "Experience" },
+  { href: "#testimonials", key: "Testimonials", text: "Testimonials" },
   { href: "#about", key: "About", text: "About" },
   // { href: '#contact', key: 'Contact', text: 'Contact'}
 ];
@@ -27,5 +27,26 @@ export const projectCards = [
     github: "GITHUB LINK",
     domain: "DOMAIN",
     image: "/dummy-presentation.png",
+  },
+];
+
+export const testimonialCards = [
+  {
+    id: 1,
+    client: "TMG Security",
+    text: "During his tenure, Prithwish worked with Development Department and was actively & diligently involved in the projects and tasks assigned to him. During the span, we found him a punctual and hardworking person. He possesses good grasping abilities and he picks up swiftly. Our evaluation of his feedbacks learned keenly. his interpersonal communication skills are on par with a professional.",
+    logo: "/tmgsec.jpeg",
+  },
+  {
+    id: 2,
+    client: "SB Welfare Society",
+    text: "I highly recommend Prithwish for his exceptional web development prowess, managing SEO independently. His strong communication and relentless work ethic shine brightly. I relyed on him for redesigning my NGO website and it was an seamless experience working with him.",
+    logo: "/Logo",
+  },
+  {
+    id: 3,
+    client: "Grocomatic",
+    text: "Prithwish expertly managed our WooCommerce site and SEO, showcasing remarkable design skills and a proactive problem-solving approach. He is an invaluable asset with exceptional talent and dedication.",
+    logo: "/Logo",
   },
 ];

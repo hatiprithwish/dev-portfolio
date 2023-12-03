@@ -20,7 +20,7 @@ const Projects = () => {
             />
           </div>
 
-          <div className="mt-3 mb-7 py-8 px-10 bg-skyblue-gradient flex items-center justify-center rounded-md">
+          <div className="mt-3 mb-7 py-8 px-10 bg-line-gradient flex items-center justify-center rounded-md">
             <div className="w-3/4">
               <h2 className="text-2xl font-semibold">{card.title}</h2>
               <p className="mt-2">{card.description}</p>
