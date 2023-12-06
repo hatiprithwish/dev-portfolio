@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -97,7 +96,12 @@ const Contact = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-full text-lg bg-skyblue hover:bg-magenta">Submit</Button>
+          <Button
+            type="submit"
+            className="w-full text-lg hover:bg-skyblue bg-magenta"
+          >
+            Submit
+          </Button>
         </form>
       </Form>
     </section>
@@ -105,4 +109,3 @@ const Contact = () => {
 };
 
 export default Contact;
- 
