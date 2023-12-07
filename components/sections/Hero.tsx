@@ -18,6 +18,7 @@ const Hero = () => {
 
       <Image
         src="/hero-img.svg"
+        priority
         height={827}
         width={553}
         alt="hero image"
