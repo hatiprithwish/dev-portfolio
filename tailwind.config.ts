@@ -12,13 +12,14 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1400px",        
       },
     },
     extend: {
       backgroundImage: {
         "line-gradient": "linear-gradient(96deg, #F3FCFF -1.33%, #55CDFC 100%)",
-        "vertical-gradient": "linear-gradient(180deg, #70D7FF 0%, #A3E4FD 31.35%, #D0F2FE 64.69%, #F3FCFF 100%)",
+        "vertical-gradient":
+          "linear-gradient(180deg, #70D7FF 0%, #A3E4FD 31.35%, #D0F2FE 64.69%, #F3FCFF 100%)",
       },
       colors: {
         magenta: "#FF6382",
