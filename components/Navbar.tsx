@@ -11,10 +11,16 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <header className="max-w-[1440px] w-full z-10  sticky top-0 py-4 bg-white">
+    <header className="max-w-[1440px] w-full z-10 sticky top-0 lg:py-4 bg-white py-2">
       <nav className="mx-10 lg:mx-28 flex items-center justify-between">
         <Link href="/">
-          <Image src="logo.svg" alt="logo" width={150} height={50} />
+          <Image
+            src="logo.svg"
+            alt="logo"
+            width={150}
+            height={50}
+            className="object-contain max-sm:w-[100px]"
+          />
         </Link>
 
         <span className="lg:flex hidden justify-end gap-7 text-lg xl:text-xl">
@@ -35,6 +41,7 @@ const Navbar = () => {
           ))}
         </span>
 
+        {/* Mobile and Tablet */}
         <div className="lg:hidden flex justify-end items-center">
           <Image
             src={toggle ? "/close.svg" : "/menu.svg"}
