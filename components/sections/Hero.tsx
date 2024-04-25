@@ -1,19 +1,33 @@
+"use client";
+
 import Image from "next/image";
+import TechStack from "../TechStack";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const router = useRouter();
   return (
     <section className="mx-10 lg:mx-28 flex items-center justify-between relative">
       <div>
         <h2 className="text-4xl font-extralight">Hi, Hati Here! I'm a</h2>
-        <h1 className="text-8xl font-black">
-          FULL STACK
+        <h1 className="text-8xl font-black uppercase">
+          FrontEnd
           <br />
-          DEVELOPER
+          Developer
         </h1>
-        <h3 className="text-2xl my-5 font-light">
-        Crafting Seamless Full Stack<br/>Web Experiences in Next.js 14 & React.js
+        <h3 className="text-lg my-5 font-light max-w-md">
+          A passionate self-taught web developer from Kolkata. I have experience
+          in <TechStack />
         </h3>
-        <button type="button" className="bg-magenta text-white text-xl p-3 font-semibold rounded-md hover:bg-skyblue transition-all">CONTACT ME</button>
+        <button
+          type="button"
+          onClick={() => {
+            router.push("#contact");
+          }}
+          className="bg-magenta text-white text-xl p-3 font-semibold rounded-md hover:bg-skyblue transition-all"
+        >
+          CONTACT ME
+        </button>
       </div>
 
       <Image

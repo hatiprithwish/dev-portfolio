@@ -8,7 +8,7 @@ export default function Home() {
     <main className="max-w-[1440px] w-full">
       <Hero />
       <Projects />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Contact />
     </main>
   );
