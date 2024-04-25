@@ -9,8 +9,11 @@ export const projectCards = [
   {
     id: 1,
     title: "CRUD Social Media App",
-    description:
-      "Replicating the Social Networking Experience: Developed for a comprehensive social media experience, enabling seamless interaction and engagement among users. Leveraged Firebase for comprehensive user authentication and posts data storage. This application enables users to seamlessly sign up, create posts, access and interact with posts from other users, reply to them, follow and unfollow people, view their profile alongside their posts, and importantly, edit their own profile for an enhanced user experience.",
+    bullets: [
+      "Developed for a comprehensive social media experience, enabling seamless interaction and engagement among users.",
+      "Leveraged Firebase for comprehensive user authentication and posts data storage.",
+      "This application enables users to seamlessly sign up, create posts, interact with posts from other users, follow and unfollow people, view their profile, and importantly, edit their own profile for an enhanced user experience.",
+    ],
     tStack:
       "React | JavaScript | Firebase | Tailwind CSS | Redux Toolkit | Chakra UI",
     github: "https://github.com/hatiprithwish/bubble",
@@ -19,9 +22,10 @@ export const projectCards = [
   },
   {
     id: 2,
-    title: "Food Database App",
-    description:
-      "Crafted a user-friendly Food Database App with essential functionalities: user authentication, menu browsing, and an intuitive ordering system. Streamlined user experience empowers seamless navigation, enabling users to browse menus, place orders, and enjoy hassle-free interactions with the platform.",
+    title: "Food Ordering App",
+    // bullets: [
+    //   "Crafted a user-friendly Food Database App with essential functionalities: user authentication, menu browsing, and an intuitive ordering system. Streamlined user experience empowers seamless navigation, enabling users to browse menus, place orders, and enjoy hassle-free interactions with the platform.",
+    // ],
     tStack:
       "React | JavaScript | Firebase | Tailwind CSS | Redux Toolkit | Framer Motion",
     github: "https://github.com/hatiprithwish/odyssey",

@@ -11,8 +11,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <header className="max-w-[1440px] w-full z-10 sticky top-0 lg:py-4 bg-white py-2">
-      <nav className="mx-10 lg:mx-28 flex items-center justify-between">
+    <header className="max-w-[1440px] w-full z-10 sticky top-0 py-4 bg-white px-4 lg:px-28">
+      <nav className="flex items-center justify-between">
         <Link href="/">
           <Image
             src="logo.svg"

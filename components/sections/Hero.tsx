@@ -7,15 +7,17 @@ import { useRouter } from "next/navigation";
 const Hero = () => {
   const router = useRouter();
   return (
-    <section className="mx-10 lg:mx-28 flex items-center justify-between relative max-h-[850px] overflow-hidden">
+    <section className="mx-4 lg:px-28 flex items-center justify-between relative max-h-[850px] overflow-hidden">
       <div>
-        <h2 className="text-4xl font-extralight">Hi, Hati Here! I'm a</h2>
-        <h1 className="text-8xl font-black uppercase">
+        <h2 className="text-xs mt-4 sm:text-xl lg:text-4xl lg:mt-0 font-extralight">
+          Hi, Hati Here! I'm a
+        </h2>
+        <h1 className="text-lg sm:text-4xl lg:text-8xl font-black uppercase">
           FrontEnd
           <br />
           Developer
         </h1>
-        <h3 className="text-lg my-5 font-light max-w-md">
+        <h3 className="text-xs lg:text-lg my-2 sm:my-5 font-light max-w-md">
           A passionate self-taught web developer from Kolkata. I have experience
           in <TechStack />
         </h3>
@@ -24,9 +26,9 @@ const Hero = () => {
           onClick={() => {
             router.push("#contact");
           }}
-          className="bg-skyblue text-white text-xl p-3 font-semibold rounded-md hover:bg-magenta transition-all"
+          className="bg-skyblue text-white text-xs lg:text-xl px-[4%] py-[2%] font-semibold rounded-[3px] lg:rounded-md hover:bg-magenta transition-all md:uppercase mb-4 lg:mb-0"
         >
-          CONTACT ME
+          Contact Me
         </button>
       </div>
 

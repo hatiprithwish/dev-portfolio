@@ -39,13 +39,16 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="mx-10 lg:mx-28 py-10">
-      <h1 className="text-3xl sm:text-5xl font-bold mb-5 sm:mb-10">
+    <section id="contact" className="mx-4 lg:mx-28 lg:py-10">
+      <h1 className="text-xl sm:text-5xl font-bold mb-5 sm:mb-10">
         Contact <span className="text-skyblue">Me</span>
       </h1>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-8 text-xs sm:text-base"
+        >
           <div className="flex gap-5 max-sm:flex-wrap">
             <div className="w-full sm:w-1/2">
               <FormField
@@ -55,7 +58,11 @@ const Contact = () => {
                   <FormItem>
                     <FormLabel>Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="John Doe" {...field} />
+                      <Input
+                        placeholder="John Doe"
+                        {...field}
+                        className="text-xs sm:text-base"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -70,7 +77,11 @@ const Contact = () => {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="johndoe@gmail.com" {...field} />
+                      <Input
+                        placeholder="johndoe@gmail.com"
+                        {...field}
+                        className="text-xs sm:text-base"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -90,6 +101,7 @@ const Contact = () => {
                     placeholder="Write your message..."
                     rows={10}
                     {...field}
+                    className="text-xs sm:text-base"
                   />
                 </FormControl>
                 <FormMessage />
@@ -98,7 +110,7 @@ const Contact = () => {
           />
           <Button
             type="submit"
-            className="w-full text-lg hover:bg-skyblue bg-magenta"
+            className="w-full text-sm sm:text-base md:text-lg hover:bg-skyblue bg-magenta"
           >
             Submit
           </Button>
