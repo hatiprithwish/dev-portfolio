@@ -31,6 +31,7 @@ const Projects = () => {
 
               <div className="flex gap-3 text-magenta mt-3">
                 <Link
+                  target="_blank"
                   href={card.domain}
                   className="transition-all underline underline-offset-2 hover:font-bold text-sm sm:text-base"
                 >
@@ -38,6 +39,7 @@ const Projects = () => {
                 </Link>
                 <span className="text-sm sm:text-base">||</span>
                 <Link
+                  target="_blank"
                   href={card.github}
                   className="transition-all hover:font-bold underline underline-offset-2 text-sm sm:text-base"
                 >
@@ -46,13 +48,13 @@ const Projects = () => {
               </div>
             </div>
 
-            <Image
+            {/* <Image
               src={card.image}
               width={366}
               height={246}
               alt="project-thumbnail"
               className="object-contain lg:w-1/4"
-            />
+            /> */}
           </div>
         </article>
       ))}

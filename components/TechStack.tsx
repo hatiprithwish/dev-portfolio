@@ -29,7 +29,9 @@ const TechStack = () => {
   }, [technologies.length]); // Depends on length to re-run effect when texts change
 
   return (
-    <span className="font-semibold">{technologies[currentTextIndex]}</span>
+    <span className="font-bold text-magenta">
+      {technologies[currentTextIndex]}
+    </span>
   );
 };
 

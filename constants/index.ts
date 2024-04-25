@@ -3,7 +3,6 @@ export const navLinks = [
   { href: "#projects", key: "Projects", text: "Projects" },
   // { href: "#testimonials", key: "Testimonials", text: "Testimonials" },
   { href: "#contact", key: "Contact", text: "Contact" },
-  // { href: '#contact', key: 'Contact', text: 'Contact'}
 ];
 
 export const projectCards = [
@@ -11,21 +10,33 @@ export const projectCards = [
     id: 1,
     title: "CRUD Social Media App",
     description:
-      "Replicating the Social Networking Experience: Built a robust Social Media Web App mirroring Threads.net, leveraging MongoDB for comprehensive user and threads data storage. Employed Clerk for secure user authentication. This application enables users to seamlessly sign up, create threads, access and interact with threads from other users, reply to threads, edit/update their own threads, view their profile alongside their posted threads, and importantly, delete their own threads for an enhanced user experience.",
+      "Replicating the Social Networking Experience: Developed for a comprehensive social media experience, enabling seamless interaction and engagement among users. Leveraged Firebase for comprehensive user authentication and posts data storage. This application enables users to seamlessly sign up, create posts, access and interact with posts from other users, reply to them, follow and unfollow people, view their profile alongside their posts, and importantly, edit their own profile for an enhanced user experience.",
     tStack:
-      "React.js | Next.js 14 | TypeScript | Tailwind CSS | Chadcn UI | Clerk Auth",
-    github: "https://github.com/Prithwish-Hati/Threads",
-    domain: "https://threads-nine-pied.vercel.app/",
+      "React | JavaScript | Firebase | Tailwind CSS | Redux Toolkit | Chakra UI",
+    github: "https://github.com/hatiprithwish/bubble",
+    domain: "https://bubble-ph.vercel.app/",
     image: "/dummy-presentation.png",
   },
   {
     id: 2,
+    title: "Food Database App",
+    description:
+      "Crafted a user-friendly Food Database App with essential functionalities: user authentication, menu browsing, and an intuitive ordering system. Streamlined user experience empowers seamless navigation, enabling users to browse menus, place orders, and enjoy hassle-free interactions with the platform.",
+    tStack:
+      "React | JavaScript | Firebase | Tailwind CSS | Redux Toolkit | Framer Motion",
+    github: "https://github.com/hatiprithwish/odyssey",
+    domain: "https://odyssey-ph.vercel.app/",
+    image: "/dummy-presentation.png",
+  },
+  {
+    id: 3,
     title: "Ecommerce Application",
     description:
-      "Seamlessly crafted a Next.js 14-based platform with Sanity.io for dynamic content management and Stripe integration for secure payments. This holistic solution delivers a user-centric interface, offering efficient product management, intuitive browsing, and streamlined transactions for an immersive and reliable online shopping experience.",
-    tStack: "T1 | T2",
-    github: "GITHUB LINK",
-    domain: "DOMAIN",
+      "Seamlessly crafted a React.js platform with Firebase for dynamic content management. This holistic solution delivers a user-centric interface, offering efficient product management, intuitive browsing for an immersive and reliable online shopping experience.",
+    tStack:
+      "React | JavaScript | Firebase | Tailwind CSS | Redux Toolkit | Framer Motion",
+    github: "https://github.com/hatiprithwish/dash",
+    domain: "https://dash-ph.vercel.app/",
     image: "/dummy-presentation.png",
   },
 ];
