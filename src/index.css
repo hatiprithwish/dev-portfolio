@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  @apply antialiased text-gray-900;
+}
+
+code {
+  background-color: #e2e2e2;
+  color: rgb(255, 1, 1);
+  font-weight: 500;
+  padding: 2px 4px;
+  border-radius: 0.25rem;
+}
+
+/* ----- Enhanced animations ----- */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-green-600 via-yellow-500 to-green-600;
+  background-size: 200% 200%;
+  animation: gradient 3s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #757874;
+  }
+  50% {
+    box-shadow: 0 0 60px #555754;
+  }
+  100% {
+    box-shadow: 0 0 5px #757874;
+  }
+}
+
+.animate-glow {
+  animation: glow 3s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-scale {
+  animation: scale 3s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(99%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-green-600 rounded-full;
+}
