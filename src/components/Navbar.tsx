@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Menu, X, Github, Linkedin } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export function Navbar() {
@@ -14,8 +14,15 @@ export function Navbar() {
     "Contact",
   ];
   const socials = [
-    { icon: Github, url: "https://github.com/hatiprithwish" },
-    { icon: Linkedin, url: "https://linkedin.com/in/hatiprithwish" },
+    {
+      icon: "/bw-icons/leetcode.svg",
+      url: "https://leetcode.com/u/hatiprithwish/",
+    },
+    { icon: "/skills/github.svg", url: "https://github.com/hatiprithwish" },
+    {
+      icon: "/bw-icons/linkedin.svg",
+      url: "https://linkedin.com/in/hatiprithwish",
+    },
   ];
 
   return (
@@ -56,7 +63,7 @@ export function Navbar() {
                 transition={{ delay: 0.5 + index * 0.1 }}
                 className="text-gray-600 hover:text-green-600 transition-colors"
               >
-                <item.icon />
+                <img src={item.icon} width={24} height={24} alt="social" />
               </motion.a>
             ))}
           </div>
